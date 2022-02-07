@@ -1,0 +1,22 @@
+@media screen and (max-width:800px)
+{
+    #left{
+        display: none;
+    }
+
+}
+@media screen and (max-width:450px)
+{
+    #right{
+        top: 0%;
+        margin-top: 0%;
+        /* width: 450px; */
+    }
+    #first{
+        border: none;
+    }
+    #second{
+        border: none;
+    }
+
+}
